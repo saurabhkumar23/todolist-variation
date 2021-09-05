@@ -1,9 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 
 const Main = () => {
+
+    const [todoItem, setTodoItem] = useState('')
+
+    const inputHandler = (e) => {
+        if(e.keyCode == 13){
+            setTodoItem(e.target.value)
+        }
+    }
+
     return (
         <div>
-            <h1>helllo</h1>
+            <input onKeyDown={(e) => inputHandler(e)}/>
         </div>
     )
 }

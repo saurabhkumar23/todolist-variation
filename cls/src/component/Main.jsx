@@ -5,14 +5,15 @@ export class Main extends Component {
     constructor(props){
         super(props)
         this.state = {
-            name : 'saurabh',
-            age : 21
+            todoItem : '',
         }
     }
 
     inputHandler = (e) => {
         if(e.keyCode == 13){
-            console.log(e.target.value)
+            this.setState({
+                todoItem : e.target.value
+            })
         }
     }
 
