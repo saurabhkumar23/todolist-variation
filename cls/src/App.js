@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Main from './component/Main'
 
 function App() {
-  return (
-    <h1>hello</h1>
-  );
+	return(
+        <Main/>
+    )
 }
 
 export default App;
